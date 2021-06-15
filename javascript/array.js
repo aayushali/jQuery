@@ -99,4 +99,10 @@ $(document).ready(function () {
 
     $('div').last().removeClass().addClass("removed-and-added");
 
+    // append() --> insert content, specified by the parameter, to the end of each element in the set of matched criteria
+
+    $('div').last().append("<h3>Appended text</h3>"); // h3 is added inside div at the last
+
+
+
 });
