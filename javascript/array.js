@@ -107,6 +107,10 @@ $(document).ready(function () {
 
      $('div h3').after("<h2>after the last div</h2>");
 
+     // before() --> inserts content before each element in the set of matched elements.
+
+    $('div h3').before("<p>Before the h3 header, this is paragraph , </p>");
+
 
 
 
