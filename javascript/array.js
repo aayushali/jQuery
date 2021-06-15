@@ -103,6 +103,11 @@ $(document).ready(function () {
 
     $('div').last().append("<h3>Appended text</h3>"); // h3 is added inside div at the last
 
+    // after() --> inster content after each element in the set of matched elements
+
+     $('div h3').after().append("<h2>after the last div</h2>");
+
+
 
 
 });
