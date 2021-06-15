@@ -105,7 +105,7 @@ $(document).ready(function () {
 
     // after() --> inster content after each element in the set of matched elements
 
-     $('div h3').after().append("<h2>after the last div</h2>");
+     $('div h3').after("<h2>after the last div</h2>");
 
 
 
