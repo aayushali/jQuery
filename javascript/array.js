@@ -160,7 +160,8 @@ $(document).ready(function () {
     var obj = JSON.parse('{"name":"AK"}');
     console.log(obj.name);
 
-
+    // add() --> Creates a new jQuery object with elements added to the set of matched elements;
+    $("section.practice").add().addClass("Added-using-add");
 
 
 
