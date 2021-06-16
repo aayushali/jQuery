@@ -140,6 +140,20 @@ $(document).ready(function () {
 
     $( "<p>Test</p>" ).prependTo( ".test-div-box" ); // same as prepend(), the selector and target are only reversed
 
+    // insertBefore() --> performs same as before() similar to above
+
+    $( "<p>Test</p>" ).insertBefore( ".test-div-box" );
+
+    // insertAfter() --> ''        ''
+
+    $( "<p>Test</p>" ).insertBefore( ".test-div-box" );
+
+    // replaceAll() method is similar with .replaceWith(), but with the source and target reversed.
+
+
+    $( "<h2>New heading</h2>" ).replaceAll( ".test-inner" ); // this line will replace all the content of .test-inner class with  given content.
+
+
 
 
 
