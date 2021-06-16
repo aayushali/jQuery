@@ -68,28 +68,28 @@ $(document).ready(function () {
 
     //ajax() function
 
-   /* $.ajax({
-        url: null,
-        method: 'POST',
-        dataType: 'script',
-        data: {
-            name: "AK",
-            location: "Boston"
-        },
-        beforeSend: function () {
-        },
-    });
-*/
+    /* $.ajax({
+         url: null,
+         method: 'POST',
+         dataType: 'script',
+         data: {
+             name: "AK",
+             location: "Boston"
+         },
+         beforeSend: function () {
+         },
+     });
+ */
     // prepend() function : inserts content specified by the parameter, to the beginning of each element in the set of matched elements
-        $('.inner').prepend("<p>Test</p>"); // added p tag before 2 inner class tags
+    $('.inner').prepend("<p>Test</p>"); // added p tag before 2 inner class tags
 
     // removeClass() working
     //   let's remove recently added test para
-    $('.inner').removeClass("inner").attr("class","inner-class");
+    $('.inner').removeClass("inner").attr("class", "inner-class");
 
 
     // The :eq() selector selects an element with a specific index number.
-    $( "span" ).eq( 0 ).text( "null");
+    $("span").eq(0).text("null");
 
     // addClass( className ) -> adds the specified class(es) to each element in the set of matched  elements
 
@@ -105,22 +105,40 @@ $(document).ready(function () {
 
     // after() --> inster content after each element in the set of matched elements
 
-     $('div h3').after("<h2>after the last div</h2>");
+    $('div h3').after("<h2>after the last div</h2>");
 
-     // before() --> inserts content before each element in the set of matched elements.
+    // before() --> inserts content before each element in the set of matched elements.
 
     $('div h3').before("<p>Before the h3 header, this is paragraph , </p>");
 
     // serializeArray() --> method that creates a javascript array of objects, ready to be encoded as a JSON string.
     // it operates on a jQuery collection of forms and/or form controls. The controls can be of several types.
 
-    $( "form" ).submit(function( event ) {
-        console.log( $( this ).serializeArray() );
+    $("form").submit(function (event) {
+        console.log($(this).serializeArray());
         event.preventDefault();
     });
 
+    //jQuery.extend() --> Merge the contents of two or more objects together into the first object.
+
+    var object1 = {
+        apple: 0,
+        banana: {weight: 52, price: 100},
+        cherry: 97
+    };
+    var object2 = {
+        banana: {price: 200},
+        durian: 100
+    };
+
+    // Merge object2 into object1
+    $.extend(object1, object2);
+    console.log(JSON.stringify(object1)); // JSON.stringify turns the key into strings ie. quotes with double quotation " "
 
 
+    // prependTo(target) --> insert every element in the set of matched elements to the beginning of the target
+
+    $( "<p>Test</p>" ).prependTo( ".test-div-box" ); // same as prepend(), the selector and target are only reversed
 
 
 
