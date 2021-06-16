@@ -111,6 +111,17 @@ $(document).ready(function () {
 
     $('div h3').before("<p>Before the h3 header, this is paragraph , </p>");
 
+    // serializeArray() --> method that creates a javascript array of objects, ready to be encoded as a JSON string.
+    // it operates on a jQuery collection of forms and/or form controls. The controls can be of several types.
+
+    $( "form" ).submit(function( event ) {
+        console.log( $( this ).serializeArray() );
+        event.preventDefault();
+    });
+
+
+
+
 
 
 
