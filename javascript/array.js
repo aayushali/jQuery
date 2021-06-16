@@ -153,6 +153,16 @@ $(document).ready(function () {
 
     $( "<h2>New heading</h2>" ).replaceAll( ".test-inner" ); // this line will replace all the content of .test-inner class with  given content.
 
+    // replaceWith() --
+    $( "div.second" ).replaceWith( "<h2>New heading</h2>" );
+
+    // JSON.parse()
+    var obj = JSON.parse('{"name":"AK"}');
+    console.log(obj.name);
+
+
+
+
 
 
 
